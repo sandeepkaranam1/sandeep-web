@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE>REGISTRATION fORM</TITLE>
+</head>
+
+<BODY>
+	<h1>Registration</h1>
+	<form action="POST" action="index.php">
+		<fieldset>
+			<legend>
+		User Information
+			</legend>
+		<table>
+		<tr>
+	<th><label> Name:</label></th>
+		<th><input type="text" name="name"></th>
+		</tr>
+		<tr>
+		<td><label>Email</label></td>
+		<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+		<td><label>Password</label></td>
+		<td><input type="password" name="password"></td>
+		</tr>
+		<tr>
+			<td><label>Location</label></td>
+			<td><select name="location"> 
+				<option value="uptown">uptown 1</option>
+				<option value="uptown2">uptown 2</option>
+				<option value="eon1">eon 1</option>
+				<option value="eon2">eon 2</option>
+			    </select></td>
+		</tr>
+<tr>
+	<td> <label>Gender</label></td>
+	<td>
+		<input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female
+	</td>
+</tr>
+
+
+<tr>
+	<td> <label>Interests</label></td>
+	<td>
+		<input type="checkbox" name="interests" value="music">Music
+		<input type="checkbox" name="interests" value="movies">Movies
+		<input type="checkbox" name="interests" value="actress">Actress
+	</td>
+</tr>
+
+<tr>
+	<td><input type="submit" value="Register"></td>
+</tr>
+	</table>
+</fieldset>
+	</form>
+</BODY>
+
+</html>
