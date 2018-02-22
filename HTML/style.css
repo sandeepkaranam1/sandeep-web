@@ -1,0 +1,56 @@
+body{background: #666;
+     color:#fff;
+     font-family: arial;
+     }
+
+ a{color: #fff;
+ 	text-decoration: none;
+ }
+
+ ul{
+ 	padding: 0;
+ }
+
+ #container{
+ 	background: #333;
+ 	width: 100%;
+
+ 	margin-left: :10px auto;
+ 	overflow:hidden;
+ 	padding: 10px;
+ }
+
+ nav{
+ 	height:40px;
+ 	background: #666;
+ }
+
+ nav ul{
+ 	padding:15px;
+
+ }
+
+ nav li{
+ 	list-style: none;
+ 	float: left;
+ 	padding-right: 20px;
+ }
+
+ main{float:left;
+width: 60%;
+ }
+
+ aside{
+ 	float: right;
+ 	width: 15%;
+ 	background: #666;
+ 	margin-top: 20px;
+ }
+
+ footer{
+ 	text-align: center;
+ 	padding: 10px;
+ 	background: #666;
+ 	margin-top: 30px;
+ 	
+ }
