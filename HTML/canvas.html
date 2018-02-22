@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+	<link rel="stylesheet" type="text/css" href="canvas.css">
+</head>
+<body>
+	<canvas id="mycanvas" width="1000" height="1000"></canvas>
+
+		<script type="text/javascript">
+			
+			
+			var c=document.getElementById('mycanvas');
+			var ctx=c.getContext('2d');
+
+				//Rectangle
+
+			ctx.fillStyle='red';
+			ctx.fillRect(75,75,175,195);
+
+				//Line
+			ctx.moveTo(0,0);
+			ctx.lineTo(75,75);
+			ctx.stroke(); 
+			
+
+					//Circle
+			ctx.beginPath();
+			ctx.arc(750,250,60,0,2*Math.PI);
+			ctx.fillStyle='green';
+			ctx.fill();
+			ctx.lineWidth=4;
+			ctx.strokeStyle='red';
+			ctx.stroke();
+
+			// Text
+			ctx.font='50px Arial';
+			ctx.strokeStyle='red'; 
+			ctx.strokeText('Hello World',600,200);
+
+			//Gradient
+			var grd=ctx.createLinearGradient(200,200,400,200);
+			grd.addColorStop(0,'blue');
+			grd.addColorStop(1,'white');
+			ctx.fillStyle=grd;
+			ctx.fillRect(250,250,300,300);
+		</script>
+</body>
+</html>
