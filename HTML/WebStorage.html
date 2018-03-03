@@ -4,6 +4,19 @@
 	<title>WEB STORAGE</title>
 </head>
 <body>
+	<div id="name"></div>
+	<script >		
+		if(typeof(Storage)!=="undefined")
+		{
+		localStorage.setItem('name','Sandeep');
+		console.log(localStorage.getItem('name'));
+	document.getElementById('name').innerHTML=localStorage.getItem('name');
+		}	
 
+		else{
+			console.log('localStorage Not Available')
+		}
+		</script>
+		
 </body>
-</html>
+ 

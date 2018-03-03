@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session STORAGE</title>
+</head>
+<body>
+	<div id="name"></div>
+	<script >		
+		if(typeof(Storage)!=="undefined")
+		{
+		sessionStorage.setItem('name','Sandeep');
+		console.log(sessionStorage.getItem('name'));
+	document.getElementById('name').innerHTML=sessionStorage.getItem('name');
+		}	
+
+		else{
+			console.log('sessionStorage Not Available')
+		}
+		</script>
+		
+</body>
