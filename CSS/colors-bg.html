@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colorsb BackGrounds and Gradients</title>
+	<style >
+	#rounded1{
+		background:rgba(255,0,0,0.7);
+		color: white;
+		width:200px;
+		height:200px;
+		padding: 30px;
+		border-radius: 10px;
+	}
+
+	#rounded2{
+	background-color: hsl(120,100%,50%);
+	color:yellow;
+	width: 150px;
+	height: 200px;
+	padding: 30px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 5px;
+
+	}
+
+	#rounded3{
+		background: hsla(120,100%,50%,0.4);
+		width: 200px;
+		height: 200px;
+		border-radius: 80%;
+		border:4px orange solid;
+		text-align: center;
+		padding: 20px;
+	}
+
+	img{border-radius: 50%;
+
+		width: 150px;
+		height: 150px;}
+
+	#border-img{
+		border:10px solid transparent;
+		padding:15px;
+		border-image: url(hello.png) 30 round;
+	}
+
+	#my-bg{
+		color: white;
+		background-image: url(hello.png),url(flower.png);
+		background-position: right 	bottom, left top;
+		background-repeat: no-repeat,repeat;
+		padding: 15px 200px 15px 15px;
+		background-size: 500px 400px;
+	}
+
+	#grad1{
+		width: 100%;
+		height: 200px;
+		background: blue;
+		background:linear-gradient(blue,black,white);
+	}
+
+	#grad2{
+		width: 100%;
+		height: 200px;
+		background:linear-gradient(to right, blue, black,white);
+	}
+
+	#grad3{
+		color: white;
+		width: 100%;
+		height: 200px;
+		background: blue;
+		background:radial-gradient(circle,white 5%,blue 20%,black 45%);
+	}
+
+	</style>
+	
+	
+</head>
+<body>
+	<div id="rounded1">Rounded Corners</div>
+	<br>
+	<div id="rounded2">Rounded Corners</div>
+	<br><div id="rounded3">Rounded Corners</div>
+	<br>
+	<img src="hello.png"><br>
+	<div id="border-img">This div uses an image</div>
+	<br>
+	<div id="my-bg">
+		<h2>Welcome</h2>
+		<p>Lorem ipsum deleter. How are youj?
+		I am fine thank you. I hope the same with you all there. I want to visit your place. I enjoyed a lot at your place during my last visit to your place.Whwn will you invite me to your place.</p>
+		<p>How is your brother. How is he studying. Is he chilling aroud roaming in the city.</p>
+	</div>
+	<br>
+	<div id="grad1">Hello SIR</div><br>
+	<div id="grad2">HOW ARE YOU</div><br>
+	<div id="grad3">I AM FINE RAJA</div><br>
+	<div id="grad4">OK RAJA ENJOY </div><br>
+</body>
+</html>

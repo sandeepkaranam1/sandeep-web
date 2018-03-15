@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Classes</title>
+	<style > 
+	a:hover{
+		color:red;
+		font-weight:bold;
+	}
+	a:active{
+		color:green;
+		font-weight: bold;
+	}
+
+	.myForm input:focus{
+		background:pink;
+		width: :300px;
+	}
+
+	.myList li:first-child{
+		color:green;
+		font-weight:bold;
+	}
+
+	.myList li:last-child{
+		color:red;
+		font-style: sans-serif;
+	}
+
+	.myList li:nth-child(2n+3){
+		color:orange;
+		font-style: oblique;
+	}
+
+	.myList li:nth-child(even){
+		color:pink;
+		background-color: blue;
+		font-style: oblique;
+	}	
+	
+
+
+
+	</style>
+</head>
+<body>
+	<a href="#">Click Me</a>
+	<form class="myForm">
+		Name:<input type="text" placeholder="Write Name">
+	</form>
+
+	<ul class="myList">
+		<li>Li 1</li>
+		<li>Li 2</li>
+		<li>Li 3</li>
+		<li>Li 4</li>
+		<li>Li 5</li>
+		<li>Li 6</li>
+		<li>Li 7</li>
+		<li>Li 8</li>
+	</ul>
+</body>
+</html>

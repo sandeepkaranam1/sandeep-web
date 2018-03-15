@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Styling</title>
+	<style>
+	body{font-family:Arial,sans-serif;
+		font-size: 13px;}
+
+	h1{
+		color:red;
+		visibility: hidden;
+		display:none;
+	}
+
+	.text-center{
+		text-align: center;
+	}
+
+	#box1{
+		background:black;
+		color:white;
+		width: 200px;
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		border-width: 3px;
+		border-style: solid;
+		border-color: orange;
+		float: left;	}
+
+	#box2{
+		background:blue;
+		color:white;
+		width: 200px;
+		padding: 20px 40px;
+		margin: 20px;
+		border-width: 3px;
+		border-style: solid;
+		float: right;
+
+	}
+
+	.clr{
+		clear:both;
+	}
+
+	ul.my-list{
+		list-style:none;
+		padding:0;
+		line-height: 2.2em;
+	}
+	ul.my-list li{
+		border-bottom: 1px dotted #666;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="text-center">
+		<h1 class="text-center">Welcome</h1>
+		<p class="text-center">This is a Paragraph</p>
+		<p >This is another paragraph</p>
+	</div>
+
+<div id="box1">This is box1</div>
+	<div id="box2">This is box2</div>	
+	<div> This is a not cleared float</div>	
+
+	<div class="clr">The box has cleaared float</div>	
+
+<ul class="my-list">
+
+<li>Li 1</li>
+<li>Li 2 </li>
+<li>Li 3</li>
+<li>Li 4 </li>
+
+
+
+</ul>
+</body>
+</html>
