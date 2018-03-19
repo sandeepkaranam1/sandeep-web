@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions & Events 2</title>
+	
+
+</head>
+<body>
+
+	<button onmouseover="getDate()">GetDate</button>
+	<div id="showDate"></div>
+<script >
+	/* function sayHello(greeting,name='Jeff')
+	{
+		alert(greeting+' '+name);
+	}
+
+	sayHello('hello');  */
+
+	function getDate(){
+		var d=new Date();
+		alert(d);
+		alert(d.getDate());
+		document.getElementById('showDate').innerHTML=d;
+	}
+</script>
+</body>
+</html>

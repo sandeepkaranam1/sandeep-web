@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops conditionals and switches</title>
+</head>
+<body>
+<div id='people'></div>
+<script >
+	var i=0;
+	for(i=0;i<10;i++)
+	{
+		console.log(i);
+	}
+
+	/* var people=['Bob','Sandeep','Karanam','Mike'];
+	for(var i=0;i<people.length;i++)
+	{
+		console.log(people[i]);
+	}     */
+
+	var people=[{name:'Bob',age:40},{name:'Frank',age:30},{name:'Raj',age:62}]
+
+	for (var i = 0; i<people.length; i++) {
+		console.log(people[i].name);
+	}
+
+	var output='';
+	for(var i=0;i<people.length;i++)
+	{
+		document.getElementById('people').innerHTML+='<li>'+people[i].name+'-'+people[i].age+'</li>';
+	}
+
+
+	var x=10,y=20
+	if(x<y)
+	{
+		console.log('x<y');
+	}else if(x==y){
+		console.log('x=y');
+	}
+
+	else
+	{
+		console.log('x>y');
+	}
+	</script>
+</body>
+</html>

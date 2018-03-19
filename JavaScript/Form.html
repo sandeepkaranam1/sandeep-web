@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form and Submit</title>
+</head>
+<body>
+<form id="myForm">
+	<div>
+		<label>Name</label>
+		<input type="text" id="name">
+	</div>
+	<div>
+		<label>EMail</label>
+		<input type="text" id="email">
+	</div>
+	<input type="submit" value="SUBMIT">
+</form>
+
+<script >
+	function submitForm(e)
+	{	
+		e.preventDefault();
+		var name=document.getElementById('name').value;
+		var email=document.getElementById('email').value;
+		console.log(email);
+		alert(name,email);
+	}
+
+	document.getElementById('myForm').addEventListener('submit',submitForm,false);
+</script>
+</body>
+</html>
