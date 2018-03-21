@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Manipulation</title>
+	<script
+  src="https://code.jquery.com/jquery-3.1.0.js"
+  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+  crossorigin="anonymous"></script>
+  <style > 
+  .square,.square2{
+  	width: 100px;
+  	height: 100px;
+  	background: black;
+  	position: relative;
+
+  }
+</style>
+</head>
+<body>
+<button id="btnHide">HIDE</button>
+<button id="btnShow">SHOW</button>
+
+<button id="btnTog">TOGGLE</button>
+<button id="btnFadeOut">FADE OUT</button>
+<button id="btnFadeIn">FADE IN</button>
+
+<button id="btnFadeTog"> FADE TOGGLE</button>
+<button id="btnSlideUp">slideUp</button>
+<button id="btnSlideDown">Slide Down</button>
+<button id="btnSlideTog">Slide TOggle</button>
+<button id="btnStop">Stop</button>
+
+<br><br>
+<button id="anim">Animate</button>
+<button id="anim2">Animate2</button>
+
+
+<P class='p1'> i THINK WE SHOULD GO TO A <span class="btn">PARTY AAND ENJOY </span> our life. WHat do you say?
+</P>
+<div class="square"></div>
+<br><br>
+<div class="square2"></div>
+	<script>
+		$(document).ready(function(){
+			$('#btnHide').click(function(){
+				$('.p1').hide();
+			});
+			$('#btnShow').click(function()
+			{
+				$('.p1').show();
+			});
+			$('#btnTog').click(function()
+			{
+				$('.btn').toggle();
+			});
+			$('#btnFadeIn').click(function(){
+				$('.p1').fadeIn();
+			});
+			$('#btnFadeOut').click(function()
+			{
+				$('.p1').fadeOut(4000);
+			});
+			$('#btnFadeTog').click(function()
+			{
+				$('.p1').fadeToggle();
+			});
+			$('#btnSlideUp').click(function()
+			{
+				$('.p1').slideUp(2000);
+			});
+			$('#btnSlideDown').click(function()
+			{
+				$('.p1').slideDown(2200);
+			});
+			$('#btnSlideTog').click(function()
+			{
+				$('.p1').slideToggle(2000);
+			});
+			$('#btnStop').click(function()
+			{
+				$('.p1').stop(1000);
+			});
+
+			$('#anim').click(function(){
+				$('.square').animate({
+					left:'+=250px',
+					opacity:'0.5',
+					height:'+=200px',
+					width:'200px',
+
+				},'fast');
+			});
+
+			$('#anim2').click(function(){
+				var div=$('.square2');
+				div.animate({height:'400px',opacity:'0.4'},'slow');
+				div.animate({width:'600px',opacity:'0.8'},'slow');
+				div.animate({height:'100px',opacity:'0.4'},'slow');
+				div.animate({width:'100px',opacity:'0.8'},'slow');
+			});
+			
+		});
+</script>
+</body>
