@@ -1,0 +1,10 @@
+include  includes/head.pug
+
+h1 #{title}
+
+if showTitle
+ h2 #{title}
+
+
+each person, i in people
+  li #{person}

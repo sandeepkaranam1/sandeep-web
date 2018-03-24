@@ -8,8 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies":{
-  	"express":"*",
-  	"body-parser":"*"
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.7",
+    "express": "*",
+    "pug": "^2.0.3"
   }
 }
